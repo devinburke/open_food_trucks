@@ -5,7 +5,7 @@ require 'json'
 require 'tty-table'
 
 def start_loader
-	Thread::new do
+  Thread::new do
 		spinner = Enumerator.new do |e|
 		  loop do
 		    e.yield '|'
